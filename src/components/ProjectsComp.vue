@@ -7,7 +7,7 @@
         <slot name="live"></slot>
     </div>
 </template>
-<script>
+<script> 
 export default {
     
 }

@@ -21,7 +21,7 @@
   </div>
   <div class="meep">
     <div>
-    <h1 class="whoop">My Skills</h1>
+    <h1 class="whoop">Technical and Soft Skills</h1>
     </div>
     <div class="bottom">
       <section v-for="skills in skillsData()" :key="skills">
