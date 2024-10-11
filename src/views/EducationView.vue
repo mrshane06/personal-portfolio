@@ -43,7 +43,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     h1{
         width: 100px;
         padding-left: 160px;

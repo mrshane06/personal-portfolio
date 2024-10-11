@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/Education">Education</router-link> |
+    <router-link to="/Education">Education and Experience</router-link> |
     <router-link to="/Projects">Projects</router-link> |
     <router-link to="/Contacts">Contact Page</router-link> 
   </nav>
@@ -11,7 +11,7 @@
       <Footer-comp>
 
       </Footer-comp>
-    </div>
+  </div>
 </template>
 <script>
 import FooterComp from './components/FooterComp.vue'
