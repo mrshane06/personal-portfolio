@@ -1,16 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/Education">Education and Experience</router-link> |
-    <router-link to="/Projects">Projects</router-link> |
-    <router-link to="/Contacts">Contact Page</router-link> 
-  </nav>
-  <router-view/>
   <div>
-      <Footer-comp>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/Education">Education and Experience</router-link> |
+      <router-link to="/Projects">Projects</router-link> |
+      <router-link to="/Contacts">Contact Page</router-link> 
+    </nav>
+    <router-view/>
+    <div>
+        <Footer-comp>
 
-      </Footer-comp>
+        </Footer-comp>
+    </div>
   </div>
 </template>
 <script>

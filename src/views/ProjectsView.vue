@@ -1,6 +1,7 @@
 <template>
+  <div>
     <div>
-        <h1 class="projectsHead">Previous Projects</h1>
+        <h2 class="projectsHead">Previous Projects</h2>
     </div>
     <div class="projects">
         <section id="proj-card" v-for="projects in projectsData()" :key="projects">
@@ -23,6 +24,7 @@
             </projects-comp>
       </section>
     </div>
+  </div>
 </template>
 <script>
 import ProjectsComp from '@/components/ProjectsComp.vue';
