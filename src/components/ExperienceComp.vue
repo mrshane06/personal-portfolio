@@ -3,6 +3,7 @@
         <slot name="company"></slot>
         <slot name="image"></slot>
         <slot name="position"></slot>
+        <slot name="jobDes"></slot>
         <slot name="years"></slot>
     </div>
 </template>

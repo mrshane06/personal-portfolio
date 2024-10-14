@@ -4,7 +4,7 @@ export default createStore({
   state: {
     about:null,
     education:null,
-    experience:null,
+    experiences:null,
     skills:null,
     softSkills:null,
     projects:null,
@@ -19,7 +19,7 @@ export default createStore({
       state.education = payload
     },
     setExperience(state,payload){
-      state.experience = payload
+      state.experiences = payload
     },
     setSkills(state,payload){
       state.skills = payload
@@ -35,10 +35,10 @@ export default createStore({
     async getData({commit}){
       let fetchInfo = await fetch ('https://mrshane06.github.io/personal-json/data/data.json')
       let data = await fetchInfo.json()
-      let {about,education,experience,skills,softSkills,projects} = data
+      let {about,education,experiences,skills,softSkills,projects} = data
       commit('setAbout',about)
       commit('setEducation',education)
-      commit('setExperience',experience)
+      commit('setExperience',experiences)
       commit('setSkills',skills)
       commit('setSoftSkills',softSkills)
       commit('setProjects',projects)

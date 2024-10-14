@@ -19,7 +19,7 @@
                     </template>
                     <br>
                     <template #years>
-                        <h4> years : {{education.years}}</h4>
+                        <h4>{{education.years}}</h4>
                     </template>
                 </education-comp>
             </section>
@@ -42,8 +42,12 @@
                         <h4>{{ exp.position }}</h4>
                     </template>
                     <br>
+                    <template #jobDes>
+                        <h4>{{ exp.jobDes }}</h4>
+                    </template>
+                    <br>
                     <template #years>
-                        <h4> years : {{exp.years}}</h4>
+                        <h4> {{exp.years}}</h4>
                     </template>
                 </experience-comp>
             </section>
@@ -63,7 +67,7 @@ export default {
             return this.$store.state.education
         },
         experienceData(){
-            return this.$store.state.experience
+            return this.$store.state.experiences
         },
     },
     computed:{
@@ -96,5 +100,10 @@ export default {
     /* experience */
     .expHead{
         margin-top: 0;
+    }
+    .exp{
+        width: 340px;
+        padding-left: 85px;
+        margin-left: 500px;
     }
 </style>
