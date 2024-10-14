@@ -47,7 +47,6 @@
             </section>
           </div>
       </div>
-
   </div>
 </template>
 <script>
@@ -126,6 +125,6 @@ export default {
   #skill{
     border-radius: 30px;
     width: 105px;
-    height: 100px;
+    height:100px;
   }
 </style>
