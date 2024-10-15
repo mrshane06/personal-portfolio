@@ -127,10 +127,85 @@ button{
   background-color: white;
   border: rgb(77, 73, 73) 2px solid;
 }
+
+    /* media queries */
+
+    /* 840px */
+
+@media only screen and (max-width:840px){
+  .contact-head{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 400px;
+  }
+  #whoop{
+    display: block;
+  }
+    /* links */
+  .links{
+    border: 2px solid black;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 110px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+    input{
+        width: 600px;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    textarea{
+        width: 605px;
+        height: 180px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    #sub{
+        margin-left: 0px;
+    }
+}
+
+    /* 400px */
+
 @media only screen and (max-width:400px){
   .contact-head{
     padding: 50px;
     width: 400px;
   }
+  #whoop{
+    display: block;
+  }
+  .contact-head{
+    width: 260px;
+    padding-top: 30px;
+  }
+    /* links */
+  .links{
+    border: 2px solid black;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+    input{
+        width: 295px;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    textarea{
+        width: 300px;
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    #sub{
+        margin-left: 0px;
+    }
 }
 </style>

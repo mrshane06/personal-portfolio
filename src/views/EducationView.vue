@@ -88,6 +88,7 @@ export default {
     .eduImg{
         width: 80px;
         height: 80px;
+        border-radius: 20px;
     }
     .ed{
         width: 340px;
@@ -104,6 +105,75 @@ export default {
     .exp{
         width: 340px;
         padding-left: 85px;
-        margin-left: 500px;
+        margin-left: 495px;
     }
+    /* media queries */
+
+    /* 840px */
+
+    @media only screen and (max-width:840px){
+    /* education */
+    .ed{
+        padding-left: 18px;
+    }
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    /* experience */
+    .exp{
+        margin-left: 150px;
+    }
+}
+
+    /* 400px */
+
+    @media only screen and (max-width:400px){
+    /* education */
+    h2{
+        margin-top: 35px;
+    }
+    .ed{
+        width: 340px;
+        padding-left: 18px;
+    }
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    /* experience */
+    .expHead{
+        margin-top: 0;
+    }
+    .exp{
+        width: 340px;
+        padding-left: 0px;
+        margin-left: 18px;
+    }
+}
+
+    /* 360px */
+
+    @media only screen and (max-width:360px){
+    .ed{
+        padding-left: 0px;
+    }
+    /* experience */
+    .exp{
+        margin-left: 0px;
+    }
+}
+
+    /* 320px */
+
+    @media only screen and (max-width:320px){
+    /* education */
+    .ed{
+        width: 300px;
+    }
+    /* experience */
+    .exp{
+        width: 300px;
+    }
+}
 </style>

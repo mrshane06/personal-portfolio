@@ -98,6 +98,26 @@ export default {
   color: #2c3e50;
 }
 
+  /* media queries */
+
+  /* 840px */
+
+  @media only screen and (max-width:840px){
+  .projectsHead{
+    padding: 30px;
+  }
+  .projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+  
+  #proj-card{
+  margin-left: 60px;
+}
+}
+
+  /* 400px */
+
 @media only screen and (max-width:400px){
   .projects{
     display:grid;
