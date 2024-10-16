@@ -126,7 +126,16 @@ export default {
     border-radius: 20px;
     width: 105px;
     height:100px;
+    animation: rotate 5s infinite ease;
   }
+
+  #skills :hover{
+    animation: rotate 5s infinite ease;
+}
+
+  @keyframes rotate{
+  100% {transform: rotate(360deg);}
+}
 
   /* media queries */
 
