@@ -9,14 +9,15 @@
                 <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/gmail_icon.png" id="gmail">niekerkkeegan007@gmail.com</p>
                 <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/location_icon.png" id="location">Bonteheuwel , Cape Town</p>
                 <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/phone_icon.png" id="phone">081 421 4195</p>
-                <p><img src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" id="git"><a href="https://github.com/mrshane06" target="_blank" class="git">mrshane06</a></p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" id="git"><a href="https://github.com/mrshane06" target="_blank" class="git">github</a></p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" id="git"><a href="https://www.linkedin.com/in/keegan-niekerk-bb1278309/" target="_blank" class="git">linkedin</a></p>
             </div>
             <section id="bam">
                 <div class="col-lg-8 mt-5 mt-lg-0 mt-md-0 mt-sm-0">
-                    <form
-                    action="https://formspree.io/f/xanwkokp"
+                  <form
+                    action="https://formspree.io/f/manyyavl"
                     method="POST"
-                    >
+                  >
                     <div class="row">
                         <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -61,7 +62,7 @@ export default {
 /* links */
 .links{
     border: 2px solid black;
-    height: 300px;
+    height: 340px;
     margin-left: 60px;
     margin-top: 50px;
     padding: 10px;
@@ -144,7 +145,7 @@ button{
     /* links */
   .links{
     border: 2px solid black;
-    height: 300px;
+    height: 340px;
     margin-left: 100px;
     margin-right: 110px;
     margin-top: 0px;
@@ -185,7 +186,7 @@ button{
     /* links */
   .links{
     border: 2px solid black;
-    height: 300px;
+    height: 340px;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 0px;
