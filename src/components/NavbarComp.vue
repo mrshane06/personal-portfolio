@@ -15,10 +15,10 @@
       <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
         <div class="navbar-start">
             <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link> |
-            <router-link to="/Education">Education & Experience</router-link> |
+            <router-link to="/about" >About</router-link> |
+            <router-link to="/Education" >Education & Experience</router-link> |
             <router-link to="/Projects">Projects</router-link> |
-            <router-link to="/Contacts">Contact Page</router-link>
+            <router-link to="/Contacts" >Contacts</router-link>
         </div>
       </div>
     </nav>
@@ -77,6 +77,7 @@
   .navbar-menu.is-active {
     display: flex;
     flex-direction:column;
+    margin-left: 50px;
   }
   
   @media (min-width: 768px) {
