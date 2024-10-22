@@ -1,12 +1,10 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/Education">Education and Experience</router-link> |
-      <router-link to="/Projects">Projects</router-link> |
-      <router-link to="/Contacts">Contact Page</router-link> 
-    </nav>
+    <div>
+        <navbar-comp>
+
+        </navbar-comp>
+    </div>
     <router-view/>
     <div>
         <Footer-comp>
@@ -17,9 +15,11 @@
 </template>
 <script>
 import FooterComp from './components/FooterComp.vue'
+import NavbarComp from './components/NavbarComp.vue';
 export default{
   components:{
-    FooterComp
+    FooterComp,
+    NavbarComp
   }
 }
 </script>
@@ -49,6 +49,7 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
   padding: 10px;
+  text-align: right;
 }
 
 nav a.router-link-exact-active {

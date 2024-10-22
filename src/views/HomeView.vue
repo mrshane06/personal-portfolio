@@ -11,6 +11,7 @@
           <h2>Hello there , my name is Keegan Niekerk: <br><br> and I am an Aspiring Fullstack Developer.</h2>
           <br>
           <a href="/about"><button> View More </button></a>
+          <a href="/about"><button> View More </button></a>
         </div>
         <br><br>
         <hr>
@@ -20,6 +21,10 @@
 <style scoped> 
 @keyframes rotate{
   100% {transform: rotate(360deg);}
+}
+button{
+  margin-left: 30px;
+  margin-right: 30px;
 }
 #logo{
   height: 185px;
@@ -60,6 +65,10 @@
   #logo{
     margin-top: 50px;
   }
+  button{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   #links{
     margin-top: 50px;
     margin-left: 90%;
@@ -84,6 +93,10 @@
   #logo{
     margin-top: 0px;
   }
+  button{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   #links{
     margin-top: 0px;
     margin-left: 85%;
@@ -97,8 +110,5 @@
   padding: 0px;
   animation: rotate 5s infinite ease;
 }
-button{
-    margin: 0px;
-  }
 }
 </style>
