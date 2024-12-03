@@ -33,19 +33,34 @@
         </div>
         <div>
             <h2 class="whoop1">Soft Skills</h2>
-          </div>
-          <div class="bottom2">
-            <section v-for="soft in softSkillsData()" :key="soft">
-              <soft-skills-comp>
-                <template #softImg>
-                  <img :src='soft.softImg' id="skill">
-                </template>
-                <template #soft>
-                  <h4 class="skillText">{{soft.soft}}</h4> 
-                </template>
-              </soft-skills-comp>
-            </section>
-          </div>
+        </div>
+        <div class="bottom2">
+          <section v-for="soft in softSkillsData()" :key="soft">
+            <soft-skills-comp>
+              <template #softImg>
+                <img :src='soft.softImg' id="skill">
+              </template>
+              <template #soft>
+                <h4 class="skillText">{{soft.soft}}</h4> 
+              </template>
+            </soft-skills-comp>
+          </section>
+        </div>
+        <div>
+            <h2 class="">Badges & Achievements</h2>
+        </div>
+        <div class="bottom3">
+          <section v-for="ach in achievementsData()" :key="ach">
+            <achievements-comp>
+              <template #badges>
+                <img :src='ach.badges' id="achieve">
+              </template>
+              <template #name>
+                <h4 class="skillText">{{ach.name}}</h4> 
+              </template>
+            </achievements-comp>
+          </section>
+        </div>
       </div>
   </div>
 </template>
@@ -53,11 +68,13 @@
 import AboutComp from '@/components/AboutComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
 import SoftSkillsComp from '@/components/SoftSkillsComp.vue';
+import AchievementsComp from '@/components/AchievementsComp.vue';
 export default {
   components:{
     AboutComp,
     SkillsComp,
-    SoftSkillsComp
+    SoftSkillsComp,
+    AchievementsComp
   },
   methods:{
         aboutData(){
@@ -68,6 +85,9 @@ export default {
         },
         softSkillsData(){
             return this.$store.state.softSkills
+        },
+        achievementsData(){
+            return this.$store.state.achievements
         },
     },
     computed:{
@@ -99,7 +119,7 @@ export default {
   .aboutText{
   width: 330px;
   padding: 17px;
-  font-size: 14px;
+  font-size: 15px;
   place-items: center;
   margin: auto;
   margin-left: 30px;
@@ -132,6 +152,27 @@ export default {
   #skill:hover{
     transform: rotate(10deg);
 }
+
+  /* badges */
+
+  #achieve{
+    border-radius: 10px;
+    width: 105px;
+    height:100px;
+    transition: 1s;
+  }
+
+  #achieve:hover{
+    transform: rotate(10deg);
+  }
+
+  .bottom3{
+    margin-top: 35px;
+    display: grid;
+    width: 800px;
+    margin-left: 230px;
+    grid-template-columns: repeat(5 ,1fr);
+  }
 
   /* media queries */
 
@@ -175,6 +216,13 @@ export default {
     margin-left: 20px;
     grid-template-columns: repeat(5 ,1fr);
   }
+  .bottom3{
+    margin-top: 35px;
+    display: grid;
+    width: 800px;
+    margin-left: 20px;
+    grid-template-columns: repeat(4 ,1fr);
+  }
 }
 
   /* 400px */
@@ -216,6 +264,13 @@ export default {
     margin-left: 35px;
     grid-template-columns: repeat(2 ,1fr);
   }
+  .bottom3{
+    margin-top: 35px;
+    display: grid;
+    width: 300px;
+    margin-left: 35px;
+    grid-template-columns: repeat(2 ,1fr);
+  }
 }
 
 /* 360px */
@@ -235,6 +290,9 @@ export default {
   .bottom2{
     margin-left: 25px;
   }
+  .bottom3{
+    margin-left: 25px;
+  }
 }
 
 /* 320px */
@@ -250,6 +308,9 @@ export default {
     margin-left: 5px;
   }
   .bottom2{
+    margin-left: 5px;
+  }
+  .bottom3{
     margin-left: 5px;
   }
 }

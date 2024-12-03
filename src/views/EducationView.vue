@@ -60,7 +60,7 @@ import ExperienceComp from '@/components/ExperienceComp.vue';
 export default {
     components:{
         EducationComp,
-        ExperienceComp
+        ExperienceComp,
     },
     methods: {
         educationData(){
