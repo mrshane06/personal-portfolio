@@ -1,18 +1,11 @@
 <template>
   <div>
-    <div>
-        <navbar-comp>
-
-        </navbar-comp>
-    </div>
-    <router-view/>
-    <div>
-        <Footer-comp>
-
-        </Footer-comp>
-    </div>
+    <NavbarComp />
+    <router-view />
+    <FooterComp />
   </div>
 </template>
+
 <script>
 import FooterComp from './components/FooterComp.vue'
 import NavbarComp from './components/NavbarComp.vue';
